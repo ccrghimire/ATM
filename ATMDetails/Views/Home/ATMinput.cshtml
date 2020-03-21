@@ -1,0 +1,91 @@
+﻿@using ATMDetails.Models
+@model List<Bank>
+    ViewBag.Title = "ATM Input";
+
+<h2>ATM Input</h2>
+
+<form action="/home/ATM Input" method="post">
+    Serial Number: <br>
+    <input type="text" name="SerialNo">
+    <br>
+    Model Number: <br>    <input type="text" name="ModelNo">
+    <br>
+    Location: <br>
+    <input type="text" name="Location">
+    <br>
+    Number of Cassettes: <br>
+    <input type="text" name="Number_of_cassettes">
+    <br>
+    Cassette Key: <br>
+    <input type="text" name="Cassette_key">
+    <br>
+    Journal Printer: <br>
+    <input type="text" name="Journal_printer">
+    <br>
+    Receipt Printer: <br>
+    <input type="text" name="Receipt_printer">
+    <br>
+    Card Reader: <br>
+    <input type="text" name="Card_Reader">
+    <br>
+    EPP: <br>
+    <input type="text" name="EPP">
+    <br>
+    Processor: <br>
+    <input type="text" name="Processor">
+    <br>
+    RAM: <br>
+    <input type="text" name="RAM">
+    <br>
+    Hard Disk: <br>
+    <input type="text" name="Hard_Disk">
+    <br>
+    CPU Model: <br>
+    <input type="text" name="CPU_Model">
+    <br>
+    LCD Type:    <br>
+    <input type="text" name="LCD_Type">
+    <br>
+    FDK Allignment: <br>
+    <input type="text" name="FDK_Allignment">
+    <br>
+    Vault: <br>
+    <input type="text" name="Vault">
+    <br>
+    Single Reject: <br>
+    <input type="text" name="Single_Reject">
+    <br>
+    Camera: <br>
+    <input type="text" name="Camera">
+    <br>
+    Windows Operating System: <br>
+    <input type="text" name="Operating_System">
+    <br>
+    Prosetup Version: <br>
+    <input type="text" name="Prosetup">
+    <br>
+    Probase Version: <br>
+    <input type="text" name="Probase">
+    <br>
+    NDC Version: <br>
+    <input type="text" name="NDC">
+    <br>
+    EMV Kernel: <br>
+    <input type="text" name="EMV_Level">
+    <br>
+    System Key: <br>
+    <input type="text" name="System_Key">
+    <br>
+    Installation Date: <br>
+    <input type="number" name="Installation_Date">
+    <br><br />
+    
+        <select name="BankId">
+            foreach (Bank bank in Model)
+            {
+            option value="bank.Id"  </bank.BankName> </Option>
+            }
+        </select>
+<input type="submit"value="Submit" />
+
+    </form>

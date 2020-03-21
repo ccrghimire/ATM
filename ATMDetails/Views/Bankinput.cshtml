@@ -1,0 +1,17 @@
+﻿
+@using ATMDetails.Models
+@model List<Bank>
+    ViewBag.Title = "Bankinput";
+
+<h2>ATM Input</h2>
+
+<form action="/home/Bank Input" method="post">
+    Bank Name: <br>
+    <input type="text" name="BankName">
+    <br>
+    Head office: <br>    <input type="text" name="HeadOffice">
+    <br>
+  
+       <input type="submit" value="Submit" />
+
+</form>
